@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="bookstore">
+	<meta name="author" content="Shreejan Shrestha">
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="style4.css">
+	<script type="text/javascript" src="contat.js"></script>
+	<style type="text/css">
+		a{
+			color: blueviolet;
+		}
+		
+		a:hover{
+			background-color:  var(--dark-color);
+			color: #000000;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<header style=" width: 100%; height: 100%;">
+
+		<div style="width: 12%; float: left;">
+		<image src="bookstore.jpg" width="100%" height="20%"></image>
+		</div>
+
+		<div style="width: 12%; float: right;">
+		<image src="bookstore.jpg" width="100%" height="20%"></image>
+		</div>
+
+	<nav class="navbar">
+		<div class="topnav">
+			
+				<div class="nav" style="float: center;width: 90%;height:  50%; background-color:;">
+			    	<div style="background-color: limegreen; width: 100%;height: 48px;font-size: 20px; padding-top: 2px;">
+			    	<ul class="nav-list">
+						<li style="display: inline;"> <a href="file:///F:/documents/html/Development/home.html">Home</a> </li><!--link to home page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Product.html">Product</a></li><!--link to product page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Contact.html">Contact</a></li><!--link to contact page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Blog.html">Blog</a></li><!--link to blog page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Research.html">Research</a></li><!--link to research page--> 
+					</ul>
+			    	</div>
+
+			    	<div style=" width: 100%;height: 71px; background-color: limegreen;">
+			    		<input type="text" name="search" id="search" placeholder="search books.." style=" width: 75%; height: 40%;">
+			    		<button class="button" style=" width: 55px; height: 20px">Search</button>
+			    	</div>
+				</div>
+		</div>
+	</nav>
+ 	</header>
+
+ 	<br>
+
+
+ 	<div class="con" style="border: 5px solid black;">
+ 		<!--option to modify order-->
+
+ 		<h3 style="float: left; padding-top:50px">How can I help you?</h3>
+
+ 		<button >
+ 			<div class="under">
+ 				<p style="font-size: 50px;">Return an Item</p>
+ 			</div>
+ 		</button>
+
+ 		<button >
+ 			<div class="under">
+ 				<p style="font-size: 50px;">Cancel Order</p>
+ 			</div>
+ 		</button>
+
+ 		<button >
+ 			<div class="under">
+ 				<p style="font-size: 50px;">Change My Order</p>
+ 			</div>
+ 		</button>
+
+ 	</div>
+
+ 	<br>
+
+<table>
+ 	<div class="con">
+ 		<!--starting of form -->
+ 		<div class="formm" >
+ 			<h2>Send Message</h2>
+
+ 			<form name="myform" onsubmit="validateform()">
+				<p style="">Full Name: <input type="text" name="fname" placeholder="Enter Your Name.."></p>
+
+				<p >Email: <input  type="text" placeholder="name@domain.com" name="email"></p>
+
+				<p>Mobile Number: <input type="P.Number" name="mobile" placeholder="Enter your phone number.."></p>
+				<br>
+
+				<p>Message: <textarea  name="message" rows="2" cols="55" placeholder="Type your message here...."></textarea></p>
+				
+
+				<input type="submit" name="button" value="send">
+			</form>
+ 			
+ 			
+			
+
+		</div>
+
+		<div class="cont" >
+			<h2>Contact Us</h2>
+
+			<div class="pic">
+				<image  style="float:right;" src="ll.png" alt="logo" height="200px" width="60%"></image>
+			</div>
+			
+
+			<div class="loaction"><!--loaction of book store-->
+
+				<a href="https://www.google.com/maps/place/Kumaripati,+Lalitpur/@27.6700078,85.3197673,17.74z/data=!4m5!3m4!1s0x39eb19ce1dace9ed:0xfb9c8b305818fb7d!8m2!3d27.6699427!4d85.3204068" target="blank"><image  style="float: left;" src="location.png" alt="logo" height="50px" width="8%"></image></a>
+				<p style="padding-top: 10px;">Kumaripati</p>
+				
+			</div>
+
+			<br>
+
+			<div class="phone"><!--phone number of book store-->
+				<image  style="float: left;" src="phone.png" alt="logo" height="50px" width="8%"></image>
+				<p style="padding-top: 5px;">01555789</p>
+			</div>
+
+			<br>
+
+			<div class="email"><!--email of book store-->
+				<a href="https://webmail.au.syrahost.com/" target="blank"><image  style="float: left;" src="email.png" alt="logo" height="75px" width="10%"></image></a>
+				<p style="padding-top: 30px;">bookstore123@gmail.com</p>
+			</div>
+
+			
+			
+		</div>
+	</div>
+</table>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!--for line spacing-->
+
+	<!--Starting of footer-->	
+				<footer>
+
+				<hr>
+
+					<div class="extra">
+						<div style="float: left;">
+						<h3>Customer Care</h3>
+						<!--list for customer care-->
+							<ul class="customercare-list">
+								<li><a href="#Help Center">Help Center</a></li>
+								<li><a href="#How To Shop">How To Shop</a></li>
+								<li><a href="#Gift Card">Gift Card</a></li>
+								<li><a href="file:///F:/documents/html/Development/Contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div style="float: left; padding-left: 200px;">
+							<h3>Book Store</h3>
+							<ul class="bookstore-list">
+								<li><a href="file:///F:/documents/html/Development/Research.html">Research</a></li>
+								<li><a href="file:///F:/documents/html/Development/Blog.html">Blog</a></li>
+								<li><a href="#Terms & Conditions">Terms & Conditions</a></li>
+								<li><a href="#Privacy Policy">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<!--links for social website-->
+						<div style="float: left; padding-left:150px;">
+							<h3>Stay Connected</h3>
+							
+							<div style="float:left;">
+								<a href="https://www.facebook.com/"><image src="facebook.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to facebook-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://www.instagram.com/"><image src="insta.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to instagram-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://web.whatsapp.com/"><image src="whatsapp.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to whatapp-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://twitter.com/"><image src="twitter.png" alt="logo" height="80px" width="90%"></image></a><!--link to twitter-->
+							</div>
+
+							<div style="float: right; padding-left: 100px;">
+								<p>@2022 copyright All Rights Reserved</p><!--for copyright-->
+							</div>
+						</div>
+
+						
+					</div>
+			</footer>
+ </body>
+ </html>	

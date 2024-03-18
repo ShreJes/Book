@@ -1,0 +1,28 @@
+#main{
+	height: 1300px;
+	width: 1500px;
+}
+
+#inner{
+	height: 100%;
+	width: 49%;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 25px green;
+	float: left;
+	padding-top: 20px;
+}
+
+#inner2{
+	height: 100%;
+	width: 49%;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 25px green;
+	float: right;
+	padding-top: 20px;
+}
+
+#main2{
+	height: 500px;
+	width: 1500px;
+}
+

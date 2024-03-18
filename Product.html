@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chaNPRet="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="bookstore">
+	<meta name="author" content="Shreejan Shrestha">
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<style type="text/css">
+		a{
+			color: blueviolet;
+		}
+		a:hover{
+			background-color:  var(--dark-color);
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+
+<!--starting of header-->
+	<header style=" width: 100%; height: 100%;">
+<!--logo fo rbook store-->
+		<div class="logo">
+		<image src="bookstore.jpg" width="100%" height="20%"></image>
+		</div>
+
+		<div  class="logo" style="float:right;">
+		<image src="bookstore.jpg" width="100%" height="20%"></image>
+		</div>
+
+	<!--starting of nav vbar-->
+	<nav class="navbar">
+		<div class="topnav">
+				<!--creating nav bar-->
+				<div class="nav">
+			    	<div style="background-color: limegreen; width: 100%;height: 48px;font-size: 20px; padding-top: 2px;">
+			    	<ul class="nav-list">
+						<li style="display: inline;"> <a href="file:///F:/documents/html/Development/home.html">Home</a> </li><!--link to home page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Product.html">Product</a></li><!--link to product page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Contact.html">Contact</a></li><!--link to contact page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Blog.html">Blog</a></li><!--link to blog page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Research.html">Research</a></li><!--link to research page--> 
+					</ul>
+			    	</div>
+
+			    	<div style=" width: 100%;height: 71px; background-color: limegreen;">
+			    		<input type="text" name="search" id="search" placeholder="search books.." style=" width: 75%; height: 40%;">
+			    		<button class="button" style=" width: 55px; height: 20px">Search</button>
+			    	</div>
+				</div>
+		</div>
+	</nav>
+ 	</header>	
+
+ 				
+ 		<!--starting of slider-->
+		<div id = "slider" >
+    		
+    		<div id = "img" style="margin-left:215px;padding-top:70px;">
+    			<img src="111.jpg">
+    		</div> 
+    		<!--javascript for slider-->
+    		<script type="text/javascript">
+	 		var images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg","6.jpg"];
+	 		var imgs = document.getElementById('img');
+	 		var x = 0;
+
+	 		setInterval(slider,2000);
+
+	 		function slider()
+	 		{
+	 			if ( x < images.length){
+	 				x = x + 1;
+	 			} else {
+	 				x = 1;
+	 			}
+	 			imgs.innerHTML = "<img src =" + images[x-1] +">";
+	 		}
+	 
+		</script>
+		 </div>
+
+		 		<!--starting of first heading-->
+				<div class="text">
+					<p><h3 style="background-color: limegreen; width: 4%;">Action</h3></p>
+				</div>
+
+				<div class="book">
+				<table>
+					<!--insterting image for book products-->
+					<div class="book1">	
+							<img src="aa.jpg" height="300px" width="200px" >
+							<p style="padding-left: 20px;">Tenth Man Down</p>
+							<p style="padding-left:20px;">NPR.1580</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book2">
+						
+							<img src="aa1.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Bourne Ultimatum</p>
+							<p style="padding-left:20px;">NPR.2100</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book3">
+						
+							<img src="aa2.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">End Game</p>
+							<p style="padding-left:20px;">NPR.1900</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book4">
+						
+							<img src="aa3.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Queen</p>
+							<p style="padding-left:20px;">NPR.1900</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book5">
+						
+							<img src="aa5.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Bloody Slayer</p>
+							<p style="padding-left:20px;">NPR.1750</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book6">
+						
+							<img src="aa6.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Exiles Of Eden</p>
+							<p style="padding-left:20px;">NPR.1400</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book7">
+						
+							<img src="aa4.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Last Synth</p>
+							<p style="padding-left:20px;">NPR.2350</p>
+						<button class="button" style="width: 85%; height: 30px;">Add To Cart</button>
+					</div>
+				</table>
+				</div>
+
+
+				<br>
+				<br>
+				
+				
+				<div class="text">
+					<p><h3 style="background-color: limegreen; width: 5%;">Comedy</h3></p>
+				</div>
+
+				<div class="book">
+					<!--insterting image for book products-->
+				<table>
+					<div class="book1">
+						
+							<img src="cc.jpg" height="300px" width="200px" >
+							<p style="padding-left: 20px;">Ayoade On Top</p>
+							<p style="padding-left:20px;">NPR.1700</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book2">
+						
+							<img src="cc1.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Best Medicine</p>
+							<p style="padding-left:20px;">NPR.200</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book3">
+						
+							<img src="cc2.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Billionaire</p>
+							<p style="padding-left:20px;">NPR.1300</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book4">
+						
+							<img src="cc7.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Started with Paris</p>
+							<p style="padding-left:20px;">NPR.1400</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book5">
+						
+							<img src="cc5.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Divine Comedy</p>
+							<p style="padding-left:20px;">NPR.2500</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book6">
+						
+							<img src="cc6.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Tina Fey</p>
+							<p style="padding-left:20px;">NPR.1550</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book7">
+						
+							<img src="cc4.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">A Funny Life</p>
+							<p style="padding-left:20px;">NPR.1560</p>
+						<button class="button" style="width: 85%; height: 30px;">Add To Cart</button>
+					</div>
+				</table>
+				</div>
+
+				<br>
+				<br>
+
+				<div class="text">
+					<p><h3 style="background-color: limegreen; width: 4%;">Fiction</h3></p>
+				</div>
+				<!--insterting image for book products-->
+				<div class="book">
+					<table>
+					<div class="book1">
+						
+							<img src="ff.jpg" height="300px" width="200px" >
+							<p style="padding-left: 20px;">The Gravity</p>
+							<p style="padding-left:20px;">NPR.1500</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book2">
+						
+							<img src="ff1.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Harry Potter</p>
+							<p style="padding-left:20px;">NPR.1300</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book3">
+						
+							<img src="ff2.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Museum</p>
+							<p style="padding-left:20px;">NPR.1750</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book4">
+						
+							<img src="ff3.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Chosen</p>
+							<p style="padding-left:20px;">NPR.2500</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book5">
+						
+							<img src="ff5.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Great Gatsby</p>
+							<p style="padding-left:20px;">NPR.1700</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book6">
+						
+							<img src="ff6.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">To Kill A Witch</p>
+							<p style="padding-left:20px;">NPR.1700</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book7">
+						
+							<img src="ff4.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Twisted</p>
+							<p style="padding-left:20px;">NPR.1450</p>
+						<button class="button" style="width: 85%; height: 30px;">Add To Cart</button>
+					</div>
+				</table>
+
+				
+				</div>
+
+				<br>
+				<br>
+
+				<div class="text">
+					<p><h3 style="background-color: limegreen; width: 4%;">Horror</h3></p>
+				</div>
+				<!--insterting image for book products-->
+				<div class="book">
+					<table>
+					<div class="book1">
+						
+							<img src="hb.jpg" height="300px" width="200px" >
+							<p style="padding-left: 20px;">The Night</p>
+							<p style="padding-left:20px;">NPR.2150</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book2">
+						
+							<img src="hb1.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">The Splender Of Fear</p>
+							<p style="padding-left:20px;">NPR.1950</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book3">
+						
+							<img src="hb2.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Form Grave With Love</p>
+							<p style="padding-left:20px;">NPR.1800</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book4" >
+						
+							<img src="hb3.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">It Waits In The Dark</p>
+							<p style="padding-left:20px;">NPR.2700</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book5" >
+						
+							<img src="hb6.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Isn't That Funny</p>
+							<p style="padding-left:20px;">NPR.5000</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book6" >
+						
+							<img src="hb7.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">In The Mind Of Revenge</p>
+							<p style="padding-left:20px;">NPR.1800</p>
+						<button class="button" style="width: 100%; height: 30px;">Add To Cart</button>
+					</div>
+
+					<div class="book7">
+						
+							<img src="hb4.jpg" height="300px" width="200px">
+							<p style="padding-left: 20px;">Untold</p>
+							<p style="padding-left:20px;">NPR.2800</p>
+						<button class="button" style="width: 85%; height: 30px;">Add To Cart</button>
+					</div>
+				</table>
+					
+				</div>
+
+			<!--Starting of footer-->	
+				<footer>
+
+				<hr>
+
+					<div class="extra">
+						<div style="float: left;">
+						<h3>Customer Care</h3>
+						<!--list for customer care-->
+							<ul class="customercare-list">
+								<li><a href="#Help Center">Help Center</a></li>
+								<li><a href="#How To Shop">How To Shop</a></li>
+								<li><a href="#Gift Card">Gift Card</a></li>
+								<li><a href="file:///F:/documents/html/Development/Contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div style="float: left; padding-left: 200px;">
+							<h3>Book Store</h3>
+							<ul class="bookstore-list">
+								<li><a href="file:///F:/documents/html/Development/Research.html">Research</a></li>
+								<li><a href="file:///F:/documents/html/Development/Blog.html">Blog</a></li>
+								<li><a href="#Terms & Conditions">Terms & Conditions</a></li>
+								<li><a href="#Privacy Policy">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<!--links for social website-->
+						<div style="float: left; padding-left:150px;">
+							<h3>Stay Connected</h3>
+							
+							<div style="float:left;">
+								<a href="https://www.facebook.com/"><image src="facebook.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to facebook-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://www.instagram.com/"><image src="insta.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to instagram-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://web.whatsapp.com/"><image src="whatsapp.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to whatapp-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://twitter.com/"><image src="twitter.png" alt="logo" height="80px" width="90%"></image></a><!--link to twitter-->
+							</div>
+
+							<div style="float: right; padding-left: 100px;">
+								<p>@2022 copyright All Rights Reserved</p><!--for copyright-->
+							</div>
+						</div>
+
+						
+					</div>
+			</footer>
+</body>
+</html>

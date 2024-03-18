@@ -1,0 +1,93 @@
+.logo{
+	width: 12%;
+	float: left;
+}
+
+.nav{
+	float: center;
+	width: 90%;
+	height: 50%;
+}
+#slider{
+ 		height: 300px;
+ 		width: 50%;
+		margin: 30px auto;
+ 		box-sizing: border-box;
+ 		overflow: hidden;
+		box-shadow: 10px 10px 25px green;
+}
+
+#img{
+		
+		height:100%;
+}
+
+.book1{
+	float:left;
+	transition: transform 0.5s;
+}
+
+.book1:hover{
+	transform: translateY(-10px);
+}
+
+.book2{
+	float:left; 
+	padding-left: 10px;
+	transition: transform 0.5s;
+}
+
+.book2:hover{
+	transform: translateY(-10px);
+}
+
+
+.book3{
+	float:left; 
+	padding-left: 10px;
+	transition: transform 0.5s;
+}
+
+.book3:hover{
+	transform: translateY(-10px);
+}
+
+.book4{
+	float:left; 
+	padding-left: 10px;
+	transition: transform 0.5s;
+}
+
+.book4:hover{
+	transform: translateY(-10px);
+}
+
+.book5{
+	float:left; 
+	padding-left: 10px;
+	transition: transform 0.5s;
+}
+
+.book5:hover{
+	transform: translateY(-10px);
+}
+
+.book6{
+	float:left; 
+	padding-left: 10px;
+	transition: transform 0.5s;
+}
+
+.book6:hover{
+	transform: translateY(-10px);
+}
+
+
+.book7{
+	padding-left: 1260px;
+	transition: transform 0.5s;
+}
+
+.book7:hover{
+	transform: translateY(-10px);
+}

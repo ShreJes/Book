@@ -1,0 +1,21 @@
+.bbb{
+	height: 1200px;
+	width: 1500px;
+}
+
+.bbb1{
+	height: 50%;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 25px green;
+	padding-top: 20px;
+}
+
+.bbb2{
+	
+	height: 50%;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 25px green;
+	padding-top: 20px;
+}

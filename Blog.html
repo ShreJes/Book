@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="bookstore">
+	<meta name="author" content="Shreejan Shrestha">
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<style type="text/css">
+		a{
+			color: blueviolet;
+		}
+		
+		a:hover{
+			background-color:  var(--dark-color);
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+
+<!--starting of header-->
+	<header style=" width: 100%; height: 100%;">
+		<!--logo for book store-->
+		<div style="width: 12%; float: left;">
+		<image src="bookstore.jpg" width="100%" height="20%"></image>
+		</div>
+
+		<div style="width: 12%; float: right;">
+		<image src="bookstore.jpg" width="100%" height="20%"></image>
+		</div>
+
+		
+	<nav class="navbar">
+		<div class="topnav">
+			<!--starting of nav bar-->
+				<div class="nav" style="float: center;width: 90%;height:  50%; background-color:;">
+			    	<div style="background-color: limegreen; width: 100%;height: 48px;font-size: 20px; padding-top: 2px;">
+			    	<ul class="nav-list">
+						<li style="display: inline;"> <a href="file:///F:/documents/html/Development/home.html">Home</a> </li><!--link to home page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Product.html">Product</a></li><!--link to product page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Contact.html">Contact</a></li><!--link to contact page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Blog.html">Blog</a></li><!--link to blog page--> 
+						<li style="display: inline; padding-left: 20px;"> <a href="file:///F:/documents/html/Development/Research.html">Research</a></li><!--link to research page--> 
+					</ul>
+			    	</div>
+
+			    	<div style=" width: 100%;height: 71px; background-color: limegreen;">
+			    		<input type="text" name="search" id="search" placeholder="search books.." style=" width: 75%; height: 40%;">
+			    		<button class="button" style=" width: 55px; height: 20px">Search</button>
+			    	</div>
+				</div>
+		</div>
+	</nav>
+ 	</header>	
+ 	<br>
+
+ 				<div class="logo">	
+					<image src="add.jpg" alt="logo" height="400px" width="90%" style="padding-left: 70px;"></image>
+				</div>
+
+
+				<br>
+
+				<div id="main">
+					<div id="inner">
+						<!--image for books-->
+						<img src="bb1.jpg" width="45%" height="40%" style="float: left;padding-left: 20px;">
+						<img src="bb2.jpg" width="45%" height="40%" style="float:right;padding-right: 20px;">
+						<!--some info about books-->
+						<p style="padding-left: 20px;padding-right: 20px;">Books play a quintessential role in every student’s life by introducing them to a world of imagination, providing knowledge of the outside world, improving their reading, writing and speaking skills as well as boosting memory and intelligence. The importance of books in our life cannot be undermined for they not only help in broadening our horizons but also act as doorways of connecting us with the world around us. They function as survival kits, they influence us and leave an impact on us. Want to know the benefits of books and the importance of reading? Curious about how books impact our lives? Read this blog to know all about the importance of books in a student’s life, essays on importance of reading books, quotes and more!</p>
+
+						<p style="padding-left: 20px;padding-right: 20px;">There are different genres of books available for book readers. Every day, thousands of books are released in the market ranging from travel books to fictional books. We can pick any book of our interest to expand our knowledge and enjoy the reading experience.Firstly, we have travel books, which tell us about the experience of various travelers. They introduce us to different places in the world without moving from our place. It gives us traveling tips which we can use in the future. Then, we have history books which state historical events. They teach about the eras and how people lived in times gone by.Furthermore, we have technology books that teach us about technological developments and different equipment. You can also read fashion and lifestyle books to get up to date with the latest trends in the fashion industry.Most importantly, there are self-help books and motivational books. These books help in the personality development of an individual. They inspire us to do well in life and also bring a positive change in ourselves. Finally, we have fictional books. They are based on the writer’s imagination and help us in enhancing our imagination too. They are very entertaining and keep us intrigued until the very end.</p>
+
+						<p style="padding-left: 20px;padding-right: 20px;">Around 130 million books have been published in the history of humanity; a heavy reader will at best get through 6,000 in a lifetime. Most of them won’t be much fun or very memorable. Books are like people; we meet many but fall in love very seldom. Perhaps only thirty books will ever truly mark us. They will be different for each of us, but the way in which they affect us will be similar.The core – and perhaps unexpected – thing that books do for us is simplify. It sounds odd, because we think of literature as sophisticated. But there are powerful ways in which books organise, and clarify our concerns – and in this sense simplify.</p>
+						
+					</div>
+
+					<div id="inner2">
+						<!--image change with change button-->
+						<h1 style="padding-left:20px">Books</h1>
+   						 <img src="bb1.jpg" id="myImage" width="45%" height="40%" style="padding-left: 150px;">
+   						 <input type="button" onclick="changeImage()" value="Change" />
+    						<p style="padding-left:20px">Click on the "Change" button to convert waterbottle<br />
+       							 into Softdrink bottle</p>
+
+       				<!--JS for image change-->
+   					 <script>
+       					 function changeImage() {
+           				 var image = document.getElementById('myImage');
+         			  	 if (image.src.match("colorbottel")) {
+            		     image.src = "bb1.jpg";
+          				  }	
+           				 else {
+              			  image.src = "cc1.jpg";
+           				 	}
+      				  	}
+   					 </script>
+
+						<p style="padding-left: 20px;padding-right: 20px;">There are not one but various advantages of reading books. To begin with, it improves our knowledge on a variety of subjects. Moreover, it makes us wiser. When we learn different things, we learn to deal with them differently too. Similarly, books also keep us entertained. They kill our boredom and give us great company when we are alone.Furthermore, books help us to recognize our areas of interest. They also determine our career choice to a great extent.Most importantly, books improve our vocabulary. We learn new words from it and that widens our vocabulary. In addition, books boost our creativity. They help us discover a completely new side.In other words, books make us more fluent in languages. They enhance our writing skills too. Plus, we become more confident after the knowledge of books. They help us in debating, public speaking, quizzes and more.In short, books give us a newer perspective and gives us a deeper understanding of things. It impacts our personality positively as well. Thus, we see how books provide us with so many benefits. We should encourage everyone to read more books and useless phones.</p>
+						
+						<p style="float:left; padding-left:20px">!!Facts About Books!!
+							<br>
+							<br>
+							1. There are around 130 million published books.
+							<br>
+							2. The most sold book is the Bible.
+							<br>
+							3. The longest book in the world is 
+							<br>
+							‘Remembrance of Things Past’.
+							<br>
+							4. The most expensive book in the world is 
+							<br>
+							‘the Codex Leicester
+							<br>
+							5. The first ever story written was ‘The Epic of Gilgamesh’.
+							<br>
+							6. The largest collection consists of 1.5 million books!
+							<br>
+							7. If you read 20 minutes a day, you would 
+							<br>
+							have read 1.8 million words in a year.
+							<br>
+							8. You can read books in lots of different 
+							<br>
+							ways including e-books and audiobooks!
+							<br>
+							9. The person who draws pictures in 
+							<br>
+							books is called an illustrator.
+							<br>
+							10. Johannes Gutenberg invented the printing press.
+						</p>
+						<img src="aa2.jpg"width="35%" height="30%" style="float: right; padding-right:10px">
+						
+					</div>
+
+
+
+				</div>
+				<br>
+
+				<!--Starting of footer-->	
+				<footer>
+
+				<hr>
+
+					<div class="extra">
+						<div style="float: left;">
+						<h3>Customer Care</h3>
+						<!--list for customer care-->
+							<ul class="customercare-list">
+								<li><a href="#Help Center">Help Center</a></li>
+								<li><a href="#How To Shop">How To Shop</a></li>
+								<li><a href="#Gift Card">Gift Card</a></li>
+								<li><a href="file:///F:/documents/html/Development/Contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div style="float: left; padding-left: 200px;">
+							<h3>Book Store</h3>
+							<ul class="bookstore-list">
+								<li><a href="file:///F:/documents/html/Development/Research.html">Research</a></li>
+								<li><a href="file:///F:/documents/html/Development/Blog.html">Blog</a></li>
+								<li><a href="#Terms & Conditions">Terms & Conditions</a></li>
+								<li><a href="#Privacy Policy">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<!--links for social website-->
+						<div style="float: left; padding-left:150px;">
+							<h3>Stay Connected</h3>
+							
+							<div style="float:left;">
+								<a href="https://www.facebook.com/"><image src="facebook.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to facebook-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://www.instagram.com/"><image src="insta.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to instagram-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://web.whatsapp.com/"><image src="whatsapp.jpg" alt="logo" height="80px" width="90%"></image></a><!--link to whatapp-->
+							</div>
+
+							<div style="float:left; padding-left:40px">
+								<a href="https://twitter.com/"><image src="twitter.png" alt="logo" height="80px" width="90%"></image></a><!--link to twitter-->
+							</div>
+
+							<div style="float: right; padding-left: 100px;">
+								<p>@2022 copyright All Rights Reserved</p><!--for copyright-->
+							</div>
+						</div>
+
+						
+					</div>
+			</footer>
+</body>
+</html>
+			  
+</body>
+</html>
